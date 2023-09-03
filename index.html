@@ -89,7 +89,7 @@
       <p>JavaScript diferencia maiúsculas de minúsculas. Isso significa que minhaVariável não é o mesmo que minhavariável. Se você tiver problemas em seu código, verifique o caso!</p>
       <p>Observe que as variáveis podem conter valores que têm diferentes tipos de dados:</p>
       <div class="grid-section">
-        <div class="col1">
+        <div class="col-1">
           <h3>Variáveis</h3>
           <p>String</p>
           <p>Number</p>
@@ -97,7 +97,7 @@
           <p>Array</p>
           <p>Object</p>
         </div>
-        <div class="col2">
+        <div class="col-2">
           <h3>Explicação</h3>
           <p> Esta é uma sequência de texto conhecida como string. Para significar que o valor for uma string, coloque-a entre aspas simples.</p>
           <p>Isto é um número. Os números não têm aspas.</p>
@@ -105,7 +105,7 @@
           <p>Esta é uma estrutura que permite armazenar vários valores em um único referência.</p>
           <p>Isso pode ser qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenados em uma variável. Tenha isso em mente enquanto aprende.</p>
         </div>
-        <div class="col3">
+        <div class="col-3">
           <h3>Exemplo</h3>
           <code>let myVariable = 'Bob';</code>
           <code>let minhaVariável = 10;</code>
@@ -118,74 +118,97 @@
     </section>
     <section class="main-section" id="sec5">
       <header>
-        <h2>Section</h2>
+        <h2>Comentários</h2>
       </header>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <ul>
-        <li>item do li</li>
-      </ul>
+      <p>Comentários são trechos de texto que podem ser adicionados junto com o código. O navegador ignora o texto marcado como comentários. Você pode escrever comentários em JavaScript da mesma forma que em CSS:</p>
+      <div class="exemplo">
+        <h3>JS</h3>
+        <code>/*
+          Tudo no meio é um comentário.
+          */</code>
+      </div>
+      <p>Se o seu comentário não contém quebras de linha, é uma opção colocá-lo atrás de duas barras como esta:</p>
+      <div class="exemplo">
+        <h3>JS</h3>
+        <code>// Isso é um comentário</code>
+      </div>
     </section>
     <section class="main-section" id="sec5">
       <header>
-        <h2>Section</h2>
+        <h2>Operadores</h2>
       </header>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Um <code>operator</code> é um símbolo matemático que produz um resultado baseado em dois valores (ou variáveis). Na tabela a seguir, você pode ver alguns dos operadores mais simples, juntamente com alguns exemplos para experimentar no console JavaScript.</p>
       <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <ul>
-        <li>item do li</li>
-      </ul>
+      <div class="grid-section">
+        <div class="col-1">
+          <h3>Operador</h3>
+          <p>Adição</p>
+          <p>Subtração, Multiplicação, Divisão</p>
+          <p>Atribuição</p>
+          <p>Igualdade estrita</p>
+          <p>Não, não é igual</p>
+        </div>
+        <div class="col-2">
+          <h3>Explicação</h3>
+          <p>Adicione dois números ou combine duas strings.</p>
+          <p>Eles fazem o que você espera que façam em matemática básica.</p>
+          <p>Como você já viu: isso atribui um valor a uma variável.</p>
+          <p>Isso executa um teste para ver se dois valores são iguais. Ele retorna um Resultado <code>true/false</code> (booleano).</p>
+          <p>Isso retorna o valor logicamente oposto do que precede. Acontece um true em um false, etc. Quando é usado ao lado do operador de igualdade, o operador de negação testa se dois os valores não são iguais.</p>
+        </div>
+        <div class="col-3">
+          <h3>Símbolo(s)</h3>
+          <code>+</code>
+          <code>-, *, /</code>
+          <code>=</code>
+          <code>===</code>
+          <code>!, !==</code>
+        </div>
+        <div class="col-4">
+          <div class="container-col">
+            <code>6 + 9;</code>
+            <code>'Olá ' + 'mundo!';</code>
+          </div>
+          <div class="container-col">
+            <code>9 - 3;</code>
+            <code>8 * 2; // multiplicar em JS é um asterisco</code>
+            <code>9 / 3;</code>
+          </div>
+          <div class="container-col">
+            <code>let myVariable = 'Bob';</code>
+          </div>
+          <div class="container-col">
+            <code>let myVariable = 3;</code>
+            <code>myVariable === 4;</code>
+          </div>
+          <div class="container-col">
+            <p>Para "Not", a expressão básica é true, mas o a comparação retorna false porque nós a negamos:
+            <p>
+              <code>let myVariable = 3;</code>
+              <code>!(myVariable === 3);</code>
+            <p>"Não é igual" dá basicamente o mesmo resultado com diferentes sintaxe. Aqui estamos testando "é <code>myVariable</code> NÃO igual a 3". Isso retorna <code>false</code> porque <code>myVariable</code> É igual a 3:</p>
+            <code>let myVariable = 3;</code>
+            <code>myVariable !== 3;</code>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="main-section" id="sec5">
       <header>
-        <h2>Section</h2>
+        <h2>Condicionais</h2>
       </header>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <ul>
-        <li>item do li</li>
-      </ul>
+      <p>Condicionais são estruturas de código usadas para testar se uma expressão retorna verdadeira ou não. Uma forma muito comum de condicionais é a instrução <code>if...else</code>. Por exemplo:</p>
+      <div class="exemplo-grid">
+        <h3>JS</h3>
+        <code>let iceCream = "chocolate";</code>
+        <code>if (iceCream === "chocolate") {</code>
+        <code>  alert("Sim, eu amo sorvete de chocolate!");</code>
+        <code>} else {</code>
+        <code>  alert("Aaaah, mas chocolate é o meu favorito…");</code>
+        <code>}</code>
+      </div>
     </section>
-    <section class="main-section" id="sec5">
-      <header>
-        <h2>Section</h2>
-      </header>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <ul>
-        <li>item do li</li>
-      </ul>
-    </section>
-    <section class="main-section" id="sec5">
-      <header>
-        <h2>Section</h2>
-      </header>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <ul>
-        <li>item do li</li>
-      </ul>
-    </section>
-    <section class="main-section" id="sec5">
-      <header>
-        <h2>Section</h2>
-      </header>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <ul>
-        <li>item do li</li>
-      </ul>
-    </section>
-    <section class="main-section" id="sec5">
-      <header>
-        <h2>Section</h2>
-      </header>
-      <p>Lorem ipsum dolor sit amet.</p>
-      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <ul>
-        <li>item do li</li>
-      </ul>
-    </section>
+
     <nav id="nav-bar">
       <header>
         <h1>Documentação JavaScript</h1>
