@@ -31,7 +31,94 @@
     </section>
     <section class="main-section" id="sec3">
       <header>
-        <h2>Primeiros passos com JavaScript</h2>
+        <h2>Noções básicas de JavaScript</h2>
+      </header>
+      <p>JavaScript é uma linguagem de programação que adiciona interatividade ao seu site. Isso acontece em jogos, no comportamento das respostas quando botões são pressionados ou com entrada de dados em formulários; com estilo dinâmico; com animação, etc. Este artigo ajuda você a começar a usar o JavaScript e aumenta sua compreensão do que é possível.</p>
+
+    </section>
+    <section class="main-section" id="sec4">
+      <header>
+        <h2>O que é JavaScript?</h2>
+      </header>
+      <p>JavaScript é uma poderosa linguagem de programação que pode adicionar interatividade a um site. Foi inventado por Brendan Eich.</p>
+      <p>JavaScript é versátil e amigável para iniciantes. Com mais experiência, você poderá criar jogos, gráficos 2D e 3D animados, aplicativos abrangentes baseados em banco de dados e muito mais!</p>
+      <P>O próprio JavaScript é relativamente compacto, mas muito flexível. Os desenvolvedores escreveram uma variedade de ferramentas sobre a linguagem JavaScript principal, desbloqueando uma grande quantidade de funcionalidades com o mínimo de esforço. Esses incluem:</P>
+      <ul>
+        <li>Interfaces de programação de aplicativos de navegador (APIs) incorporadas a navegadores da Web, fornecendo funcionalidades como criação dinâmica de HTML e definição de estilos CSS; coletar e manipular um fluxo de vídeo da webcam de um usuário ou gerar gráficos 3D e amostras de áudio.</li>
+        <li>APIs de terceiros que permitem aos desenvolvedores incorporar funcionalidades em sites de outros provedores de conteúdo, como Twitter ou Facebook.</li>
+        <li>Estruturas e bibliotecas de terceiros que você pode aplicar ao HTML para acelerar o trabalho de construção de sites e aplicativos.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="sec5">
+      <header>
+        <h2>Um exemplo "Olá, mundo!"</h2>
+      </header>
+      <p>JavaScript é uma das tecnologias da web modernas mais populares! À medida que suas habilidades em JavaScript aumentam, seus sites entrarão em uma nova dimensão de poder e criatividade.</p>
+      <p>No entanto, familiarizar-se com JavaScript é mais desafiador do que familiarizar-se com HTML e CSS. Você pode ter que começar pequeno e progredir gradualmente. Para começar, vamos examinar como adicionar JavaScript à sua página para criar um exemplo Hello world!. (Hello world! é o padrão para exemplos de programação introdutória.)</p>
+      <code>Codigo teste!</code>
+      <ul>
+        <li>Vá para o seu site de teste e crie uma nova pasta chamada <code>scripts</code> . Dentro da pasta scripts, crie um novo documento de texto chamado <code>main.js</code> e salve-o.</li>
+        <li>Em seu arquivo <code>index.html</code>, insira este código em uma nova linha, logo antes da tag de fechamento
+          <code>&#60/body&#62</code>:
+          <div class="exemplo">
+            <h3>HTML</h3>
+            <code>&#60script src="scripts/main.js"&#62&#60/script&#62</code>
+          </div>
+        </li>
+        <li>Isso faz o mesmo trabalho que o elemento <code>&#60link&#62</code> para CSS. Ele aplica o JavaScript à página, para que possa afetar o HTML (junto com o CSS e qualquer outra coisa na página).
+        </li>
+        <li>Adicione este código ao arquivo <code>main.js</code>
+          <div class="exemplo">
+            <h3>JS</h3>
+            <code>const myHeading = document.querySelector("h1");</code>
+            <code> myHeading.textContent = "Olá mundo!";</code>
+          </div>
+        </li>
+        <li>Certifique-se de que os arquivos HTML e JavaScript foram salvos. Em seguida, carregue <code>index.html</code> em seu navegador. Você deve ver algo assim:</li>
+        <img src="./img/hello-world.png" alt="hello world">
+      </ul>
+    </section>
+    <section class="main-section" id="sec5">
+      <header>
+        <h2>Variáveis</h2>
+      </header>
+      <p>Variables são contêineres que armazenam valores. Você começa declarando uma variável com a palavra-chave let, seguida do nome que você dá à variável:</p>
+      <div class="exemplo">
+        <code>let myVariable;</code>
+      </div>
+      <p>JavaScript diferencia maiúsculas de minúsculas. Isso significa que minhaVariável não é o mesmo que minhavariável. Se você tiver problemas em seu código, verifique o caso!</p>
+      <p>Observe que as variáveis podem conter valores que têm diferentes tipos de dados:</p>
+      <div class="grid-section">
+        <div class="col1">
+          <h3>Variáveis</h3>
+          <p>String</p>
+          <p>Number</p>
+          <p>Boolean</p>
+          <p>Array</p>
+          <p>Object</p>
+        </div>
+        <div class="col2">
+          <h3>Explicação</h3>
+          <p> Esta é uma sequência de texto conhecida como string. Para significar que o valor for uma string, coloque-a entre aspas simples.</p>
+          <p>Isto é um número. Os números não têm aspas.</p>
+          <p>Este é um valor Verdadeiro/Falso. As palavras <code>true</code> e <code>false</code> são palavras-chave especiais que não precisam de aspas.</p>
+          <p>Esta é uma estrutura que permite armazenar vários valores em um único referência.</p>
+          <p>Isso pode ser qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenados em uma variável. Tenha isso em mente enquanto aprende.</p>
+        </div>
+        <div class="col3">
+          <h3>Exemplo</h3>
+          <code>let myVariable = 'Bob';</code>
+          <code>let minhaVariável = 10;</code>
+          <code>let myVariable = true;</code>
+          <code>let myVariable = [1,'Bob','Steve',10];</code>
+          <code>let myVariable = document.querySelector('h1');</code>
+        </div>
+      </div>
+      <p>Então, por que precisamos de variáveis? As variáveis são necessárias para fazer qualquer coisa interessante na programação. Se os valores não pudessem ser alterados, você não poderia fazer nada dinâmico, como personalizar uma mensagem de saudação ou alterar uma imagem exibida em uma galeria de imagens.</p>
+    </section>
+    <section class="main-section" id="sec5">
+      <header>
+        <h2>Section</h2>
       </header>
       <p>Lorem ipsum dolor sit amet.</p>
       <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
@@ -39,7 +126,47 @@
         <li>item do li</li>
       </ul>
     </section>
-    <section class="main-section" id="sec4">
+    <section class="main-section" id="sec5">
+      <header>
+        <h2>Section</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
+      <ul>
+        <li>item do li</li>
+      </ul>
+    </section>
+    <section class="main-section" id="sec5">
+      <header>
+        <h2>Section</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
+      <ul>
+        <li>item do li</li>
+      </ul>
+    </section>
+    <section class="main-section" id="sec5">
+      <header>
+        <h2>Section</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
+      <ul>
+        <li>item do li</li>
+      </ul>
+    </section>
+    <section class="main-section" id="sec5">
+      <header>
+        <h2>Section</h2>
+      </header>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
+      <ul>
+        <li>item do li</li>
+      </ul>
+    </section>
+    <section class="main-section" id="sec5">
       <header>
         <h2>Section</h2>
       </header>
