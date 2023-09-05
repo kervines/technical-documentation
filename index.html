@@ -10,219 +10,243 @@
 
 <body>
   <main id="main-doc">
-    <section class="main-section" id="javascript">
-      <header>
-        <h2>JavaScript</h2>
-      </header>
-      <p>JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</p>
-      <p>O padrão JavaScript é ECMAScript. Desde 2012, todos os navegadores modernos possuem suporte total ao ECMAScript 5.1. Navegadores mais antigos suportam pelo menos ECMAScript 3. Em 17 de Junho de 2015, a ECMA International publicou a sexta versão do ECMAScript, que é oficialmente chamado de ECMAScript 2015, e foi inicialmente conhecido como ECMAScript 6 ou ES6. Desde então, as especificações do ECMAScript são lançadas anualmente. </p>
-      <p>Não se deve confundir o JavaScript com a linguagem de programação Java. Tanto Java quanto JavaScript são marcas registradas da Oracle nos Estados Unidos da América e em outros países. No entanto, as duas linguagens de programação possuem sintaxe, semânticas e usos muito diferentes.</p>
-    </section>
-    <section class="main-section" id="caminho-aprendizado">
-      <header>
-        <h2>O caminho para o aprendizado</h2>
-      </header>
-      <p>O JavaScript não é tão fácil de aprender como outras linguagens, como HTML e CSS, que são outros dois pilares do desenvolvimento front-end. Antes de tentar aprender JavaScript, é altamente recomendável que você aprenda e se familiarize com pelo menos estas duas tecnologias primeiro. Você pode começar através dos seguintes módulos:</p>
-      <ul>
-        <li>Começando na Web</li>
-        <li>Introdução ao HTML</li>
-        <li>Introdução ao CSS</li>
-      </ul>
-    </section>
-    <section class="main-section" id="nocao-basica">
-      <header>
-        <h2>Noções básicas de JavaScript</h2>
-      </header>
-      <p>JavaScript é uma linguagem de programação que adiciona interatividade ao seu site. Isso acontece em jogos, no comportamento das respostas quando botões são pressionados ou com entrada de dados em formulários; com estilo dinâmico; com animação, etc. Este artigo ajuda você a começar a usar o JavaScript e aumenta sua compreensão do que é possível.</p>
-
-    </section>
-    <section class="main-section" id="o-que-e-js">
-      <header>
-        <h2>O que é JavaScript?</h2>
-      </header>
-      <p>JavaScript é uma poderosa linguagem de programação que pode adicionar interatividade a um site. Foi inventado por Brendan Eich.</p>
-      <p>JavaScript é versátil e amigável para iniciantes. Com mais experiência, você poderá criar jogos, gráficos 2D e 3D animados, aplicativos abrangentes baseados em banco de dados e muito mais!</p>
-      <P>O próprio JavaScript é relativamente compacto, mas muito flexível. Os desenvolvedores escreveram uma variedade de ferramentas sobre a linguagem JavaScript principal, desbloqueando uma grande quantidade de funcionalidades com o mínimo de esforço. Esses incluem:</P>
-      <ul>
-        <li>Interfaces de programação de aplicativos de navegador (APIs) incorporadas a navegadores da Web, fornecendo funcionalidades como criação dinâmica de HTML e definição de estilos CSS; coletar e manipular um fluxo de vídeo da webcam de um usuário ou gerar gráficos 3D e amostras de áudio.</li>
-        <li>APIs de terceiros que permitem aos desenvolvedores incorporar funcionalidades em sites de outros provedores de conteúdo, como Twitter ou Facebook.</li>
-        <li>Estruturas e bibliotecas de terceiros que você pode aplicar ao HTML para acelerar o trabalho de construção de sites e aplicativos.</li>
-      </ul>
-    </section>
-    <section class="main-section" id="hello-world">
-      <header>
-        <h2>Um exemplo "Olá, mundo!"</h2>
-      </header>
-      <p>JavaScript é uma das tecnologias da web modernas mais populares! À medida que suas habilidades em JavaScript aumentam, seus sites entrarão em uma nova dimensão de poder e criatividade.</p>
-      <p>No entanto, familiarizar-se com JavaScript é mais desafiador do que familiarizar-se com HTML e CSS. Você pode ter que começar pequeno e progredir gradualmente. Para começar, vamos examinar como adicionar JavaScript à sua página para criar um exemplo Hello world!. (Hello world! é o padrão para exemplos de programação introdutória.)</p>
-      <code>Codigo teste!</code>
-      <ul>
-        <li>Vá para o seu site de teste e crie uma nova pasta chamada <code>scripts</code> . Dentro da pasta scripts, crie um novo documento de texto chamado <code>main.js</code> e salve-o.</li>
-        <li>Em seu arquivo <code>index.html</code>, insira este código em uma nova linha, logo antes da tag de fechamento
-          <code>&#60/body&#62</code>:
-          <div class="exemplo">
-            <h3>HTML</h3>
-            <code>&#60script src="scripts/main.js"&#62&#60/script&#62</code>
-          </div>
-        </li>
-        <li>Isso faz o mesmo trabalho que o elemento <code>&#60link&#62</code> para CSS. Ele aplica o JavaScript à página, para que possa afetar o HTML (junto com o CSS e qualquer outra coisa na página).
-        </li>
-        <li>Adicione este código ao arquivo <code>main.js</code>
-          <div class="exemplo">
-            <h3>JS</h3>
-            <code>const myHeading = document.querySelector("h1");</code>
-            <code> myHeading.textContent = "Olá mundo!";</code>
-          </div>
-        </li>
-        <li>Certifique-se de que os arquivos HTML e JavaScript foram salvos. Em seguida, carregue <code>index.html</code> em seu navegador. Você deve ver algo assim:</li>
-        <img src="./img/hello-world.png" alt="hello world">
-      </ul>
-    </section>
-    <section class="main-section" id="variaveis">
-      <header>
-        <h2>Variáveis</h2>
-      </header>
-      <p>Variables são contêineres que armazenam valores. Você começa declarando uma variável com a palavra-chave let, seguida do nome que você dá à variável:</p>
-      <div class="exemplo">
-        <code>let myVariable;</code>
-      </div>
-      <p>JavaScript diferencia maiúsculas de minúsculas. Isso significa que minhaVariável não é o mesmo que minhavariável. Se você tiver problemas em seu código, verifique o caso!</p>
-      <p>Observe que as variáveis podem conter valores que têm diferentes tipos de dados:</p>
-      <div class="grid-section">
-        <div class="col-1">
-          <h3>Variáveis</h3>
-          <p>String</p>
-          <p>Number</p>
-          <p>Boolean</p>
-          <p>Array</p>
-          <p>Object</p>
-        </div>
-        <div class="col-2">
-          <h3>Explicação</h3>
-          <p> Esta é uma sequência de texto conhecida como string. Para significar que o valor for uma string, coloque-a entre aspas simples.</p>
-          <p>Isto é um número. Os números não têm aspas.</p>
-          <p>Este é um valor Verdadeiro/Falso. As palavras <code>true</code> e <code>false</code> são palavras-chave especiais que não precisam de aspas.</p>
-          <p>Esta é uma estrutura que permite armazenar vários valores em um único referência.</p>
-          <p>Isso pode ser qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenados em uma variável. Tenha isso em mente enquanto aprende.</p>
-        </div>
-        <div class="col-3">
-          <h3>Exemplo</h3>
-          <code>let myVariable = 'Bob';</code>
-          <code>let minhaVariável = 10;</code>
-          <code>let myVariable = true;</code>
-          <code>let myVariable = [1,'Bob','Steve',10];</code>
-          <code>let myVariable = document.querySelector('h1');</code>
-        </div>
-      </div>
-      <p>Então, por que precisamos de variáveis? As variáveis são necessárias para fazer qualquer coisa interessante na programação. Se os valores não pudessem ser alterados, você não poderia fazer nada dinâmico, como personalizar uma mensagem de saudação ou alterar uma imagem exibida em uma galeria de imagens.</p>
-    </section>
-    <section class="main-section" id="comentarios">
-      <header>
-        <h2>Comentários</h2>
-      </header>
-      <p>Comentários são trechos de texto que podem ser adicionados junto com o código. O navegador ignora o texto marcado como comentários. Você pode escrever comentários em JavaScript da mesma forma que em CSS:</p>
-      <div class="exemplo">
-        <h3>JS</h3>
-        <code>/*
-          Tudo no meio é um comentário.
-          */</code>
-      </div>
-      <p>Se o seu comentário não contém quebras de linha, é uma opção colocá-lo atrás de duas barras como esta:</p>
-      <div class="exemplo">
-        <h3>JS</h3>
-        <code>// Isso é um comentário</code>
-      </div>
-    </section>
-    <section class="main-section" id="operadores">
-      <header>
-        <h2>Operadores</h2>
-      </header>
-      <p>Um <code>operator</code> é um símbolo matemático que produz um resultado baseado em dois valores (ou variáveis). Na tabela a seguir, você pode ver alguns dos operadores mais simples, juntamente com alguns exemplos para experimentar no console JavaScript.</p>
-      <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-      <div class="grid-section">
-        <div class="col-1">
-          <h3>Operador</h3>
-          <p>Adição</p>
-          <p>Subtração, Multiplicação, Divisão</p>
-          <p>Atribuição</p>
-          <p>Igualdade estrita</p>
-          <p>Não, não é igual</p>
-        </div>
-        <div class="col-2">
-          <h3>Explicação</h3>
-          <p>Adicione dois números ou combine duas strings.</p>
-          <p>Eles fazem o que você espera que façam em matemática básica.</p>
-          <p>Como você já viu: isso atribui um valor a uma variável.</p>
-          <p>Isso executa um teste para ver se dois valores são iguais. Ele retorna um Resultado <code>true/false</code> (booleano).</p>
-          <p>Isso retorna o valor logicamente oposto do que precede. Acontece um true em um false, etc. Quando é usado ao lado do operador de igualdade, o operador de negação testa se dois os valores não são iguais.</p>
-        </div>
-        <div class="col-3">
-          <h3>Símbolo(s)</h3>
-          <code>+</code>
-          <code>-, *, /</code>
-          <code>=</code>
-          <code>===</code>
-          <code>!, !==</code>
-        </div>
-        <div class="col-4">
-          <div class="container-col">
-            <code>6 + 9;</code>
-            <code>'Olá ' + 'mundo!';</code>
-          </div>
-          <div class="container-col">
-            <code>9 - 3;</code>
-            <code>8 * 2; // multiplicar em JS é um asterisco</code>
-            <code>9 / 3;</code>
-          </div>
-          <div class="container-col">
-            <code>let myVariable = 'Bob';</code>
-          </div>
-          <div class="container-col">
-            <code>let myVariable = 3;</code>
-            <code>myVariable === 4;</code>
-          </div>
-          <div class="container-col">
-            <p>Para "Not", a expressão básica é true, mas o a comparação retorna false porque nós a negamos:
-            <p>
-              <code>let myVariable = 3;</code>
-              <code>!(myVariable === 3);</code>
-            <p>"Não é igual" dá basicamente o mesmo resultado com diferentes sintaxe. Aqui estamos testando "é <code>myVariable</code> NÃO igual a 3". Isso retorna <code>false</code> porque <code>myVariable</code> É igual a 3:</p>
-            <code>let myVariable = 3;</code>
-            <code>myVariable !== 3;</code>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-section" id="condicionais">
-      <header>
-        <h2>Condicionais</h2>
-      </header>
-      <p>Condicionais são estruturas de código usadas para testar se uma expressão retorna verdadeira ou não. Uma forma muito comum de condicionais é a instrução <code>if...else</code>. Por exemplo:</p>
-      <div class="exemplo-grid">
-        <h3>JS</h3>
-        <code>let iceCream = "chocolate";</code>
-        <code>if (iceCream === "chocolate") {</code>
-        <code>  alert("Sim, eu amo sorvete de chocolate!");</code>
-        <code>} else {</code>
-        <code>  alert("Aaaah, mas chocolate é o meu favorito…");</code>
-        <code>}</code>
-      </div>
-    </section>
-
-    <nav id="nav-bar">
+    <nav id="navbar">
       <header>
         <h1>Documentação JavaScript</h1>
       </header>
-      <a href="#javascript" class="nav-link">JavaScript</a>
-      <a href="#caminho-aprendizado" class="nav-link">O caminho para o aprendizado</a>
-      <a href="#nocao-basica" class="nav-link">Noções básicas de JavaScript</a>
-      <a href="#o-que-e-js" class="nav-link">O que é JavaScript?</a>
-      <a href="#hello-world" class="nav-link">Um exemplo "Olá, mundo!"</a>
-      <a href="#variaveis" class="nav-link">Variáveis</a>
-      <a href="#comentarios" class="nav-link">Comentários</a>
-      <a href="#operadores" class="nav-link">Operadores</a>
-      <a href="#condicionais" class="nav-link">Condicionais</a>
+      <ul>
+        <li>
+          <a href="#javascript" class="nav-link">JavaScript</a>
+        </li>
+        <li>
+          <a href="#caminho-aprendizado" class="nav-link">O caminho para o aprendizado</a>
+        </li>
+        <li>
+          <a href="#nocao-basica" class="nav-link">Noções básicas de JavaScript</a>
+        </li>
+        <li>
+          <a href="#o-que-e-js" class="nav-link">O que é JavaScript?</a>
+        </li>
+        <li>
+          <a href="#hello-world" class="nav-link">Um exemplo "Olá, mundo!"</a>
+        </li>
+        <li>
+          <a href="#variaveis" class="nav-link">Variáveis</a>
+        </li>
+        <li>
+          <a href="#comentarios" class="nav-link">Comentários</a>
+        </li>
+        <li>
+          <a href="#operadores" class="nav-link">Operadores</a>
+        </li>
+        <li>
+          <a href="#condicionais" class="nav-link">Condicionais</a>
+        </li>
+      </ul>
     </nav>
+    <section class="container">
+      <section class="main-section" id="javascript">
+        <header>
+          <h2>JavaScript</h2>
+        </header>
+        <p>JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js, Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional).</p>
+        <p>O padrão JavaScript é ECMAScript. Desde 2012, todos os navegadores modernos possuem suporte total ao ECMAScript 5.1. Navegadores mais antigos suportam pelo menos ECMAScript 3. Em 17 de Junho de 2015, a ECMA International publicou a sexta versão do ECMAScript, que é oficialmente chamado de ECMAScript 2015, e foi inicialmente conhecido como ECMAScript 6 ou ES6. Desde então, as especificações do ECMAScript são lançadas anualmente. </p>
+        <p>Não se deve confundir o JavaScript com a linguagem de programação Java. Tanto Java quanto JavaScript são marcas registradas da Oracle nos Estados Unidos da América e em outros países. No entanto, as duas linguagens de programação possuem sintaxe, semânticas e usos muito diferentes.</p>
+      </section>
+      <section class="main-section" id="caminho-aprendizado">
+        <header>
+          <h2>O caminho para o aprendizado</h2>
+        </header>
+        <p>O JavaScript não é tão fácil de aprender como outras linguagens, como HTML e CSS, que são outros dois pilares do desenvolvimento front-end. Antes de tentar aprender JavaScript, é altamente recomendável que você aprenda e se familiarize com pelo menos estas duas tecnologias primeiro. Você pode começar através dos seguintes módulos:</p>
+        <ul>
+          <li>Começando na Web</li>
+          <li>Introdução ao HTML</li>
+          <li>Introdução ao CSS</li>
+        </ul>
+      </section>
+      <section class="main-section" id="nocao-basica">
+        <header>
+          <h2>Noções básicas de JavaScript</h2>
+        </header>
+        <p>JavaScript é uma linguagem de programação que adiciona interatividade ao seu site. Isso acontece em jogos, no comportamento das respostas quando botões são pressionados ou com entrada de dados em formulários; com estilo dinâmico; com animação, etc. Este artigo ajuda você a começar a usar o JavaScript e aumenta sua compreensão do que é possível.</p>
+
+      </section>
+      <section class="main-section" id="o-que-e-js">
+        <header>
+          <h2>O que é JavaScript?</h2>
+        </header>
+        <p>JavaScript é uma poderosa linguagem de programação que pode adicionar interatividade a um site. Foi inventado por Brendan Eich.</p>
+        <p>JavaScript é versátil e amigável para iniciantes. Com mais experiência, você poderá criar jogos, gráficos 2D e 3D animados, aplicativos abrangentes baseados em banco de dados e muito mais!</p>
+        <P>O próprio JavaScript é relativamente compacto, mas muito flexível. Os desenvolvedores escreveram uma variedade de ferramentas sobre a linguagem JavaScript principal, desbloqueando uma grande quantidade de funcionalidades com o mínimo de esforço. Esses incluem:</P>
+        <ul>
+          <li>Interfaces de programação de aplicativos de navegador (APIs) incorporadas a navegadores da Web, fornecendo funcionalidades como criação dinâmica de HTML e definição de estilos CSS; coletar e manipular um fluxo de vídeo da webcam de um usuário ou gerar gráficos 3D e amostras de áudio.</li>
+          <li>APIs de terceiros que permitem aos desenvolvedores incorporar funcionalidades em sites de outros provedores de conteúdo, como Twitter ou Facebook.</li>
+          <li>Estruturas e bibliotecas de terceiros que você pode aplicar ao HTML para acelerar o trabalho de construção de sites e aplicativos.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="hello-world">
+        <header>
+          <h2>Um exemplo "Olá, mundo!"</h2>
+        </header>
+        <p>JavaScript é uma das tecnologias da web modernas mais populares! À medida que suas habilidades em JavaScript aumentam, seus sites entrarão em uma nova dimensão de poder e criatividade.</p>
+        <p>No entanto, familiarizar-se com JavaScript é mais desafiador do que familiarizar-se com HTML e CSS. Você pode ter que começar pequeno e progredir gradualmente. Para começar, vamos examinar como adicionar JavaScript à sua página para criar um exemplo Hello world!. (Hello world! é o padrão para exemplos de programação introdutória.)</p>
+        <code>Codigo teste!</code>
+        <ul>
+          <li>Vá para o seu site de teste e crie uma nova pasta chamada <code>scripts</code> . Dentro da pasta scripts, crie um novo documento de texto chamado <code>main.js</code> e salve-o.</li>
+          <li>Em seu arquivo <code>index.html</code>, insira este código em uma nova linha, logo antes da tag de fechamento
+            <code>&#60/body&#62</code>:
+            <div class="exemplo">
+              <h3>HTML</h3>
+              <code>&#60script src="scripts/main.js"&#62&#60/script&#62</code>
+            </div>
+          </li>
+          <li>Isso faz o mesmo trabalho que o elemento <code>&#60link&#62</code> para CSS. Ele aplica o JavaScript à página, para que possa afetar o HTML (junto com o CSS e qualquer outra coisa na página).
+          </li>
+          <li>Adicione este código ao arquivo <code>main.js</code>
+            <div class="exemplo">
+              <h3>JS</h3>
+              <code>const myHeading = document.querySelector("h1");</code>
+              <code> myHeading.textContent = "Olá mundo!";</code>
+            </div>
+          </li>
+          <li>Certifique-se de que os arquivos HTML e JavaScript foram salvos. Em seguida, carregue <code>index.html</code> em seu navegador. Você deve ver algo assim:</li>
+          <img src="./img/hello-world.png" alt="hello world">
+        </ul>
+      </section>
+      <section class="main-section" id="variaveis">
+        <header>
+          <h2>Variáveis</h2>
+        </header>
+        <p>Variables são contêineres que armazenam valores. Você começa declarando uma variável com a palavra-chave let, seguida do nome que você dá à variável:</p>
+        <div class="exemplo">
+          <code>let myVariable;</code>
+        </div>
+        <p>JavaScript diferencia maiúsculas de minúsculas. Isso significa que minhaVariável não é o mesmo que minhavariável. Se você tiver problemas em seu código, verifique o caso!</p>
+        <p>Observe que as variáveis podem conter valores que têm diferentes tipos de dados:</p>
+        <div class="grid-section">
+          <div class="col-1">
+            <h3>Variáveis</h3>
+            <p>String</p>
+            <p>Number</p>
+            <p>Boolean</p>
+            <p>Array</p>
+            <p>Object</p>
+          </div>
+          <div class="col-2">
+            <h3>Explicação</h3>
+            <p> Esta é uma sequência de texto conhecida como string. Para significar que o valor for uma string, coloque-a entre aspas simples.</p>
+            <p>Isto é um número. Os números não têm aspas.</p>
+            <p>Este é um valor Verdadeiro/Falso. As palavras <code>true</code> e <code>false</code> são palavras-chave especiais que não precisam de aspas.</p>
+            <p>Esta é uma estrutura que permite armazenar vários valores em um único referência.</p>
+            <p>Isso pode ser qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenados em uma variável. Tenha isso em mente enquanto aprende.</p>
+          </div>
+          <div class="col-3">
+            <h3>Exemplo</h3>
+            <code>let myVariable = 'Bob';</code>
+            <code>let minhaVariável = 10;</code>
+            <code>let myVariable = true;</code>
+            <code>let myVariable = [1,'Bob','Steve',10];</code>
+            <code>let myVariable = document.querySelector('h1');</code>
+          </div>
+        </div>
+        <p>Então, por que precisamos de variáveis? As variáveis são necessárias para fazer qualquer coisa interessante na programação. Se os valores não pudessem ser alterados, você não poderia fazer nada dinâmico, como personalizar uma mensagem de saudação ou alterar uma imagem exibida em uma galeria de imagens.</p>
+      </section>
+      <section class="main-section" id="comentarios">
+        <header>
+          <h2>Comentários</h2>
+        </header>
+        <p>Comentários são trechos de texto que podem ser adicionados junto com o código. O navegador ignora o texto marcado como comentários. Você pode escrever comentários em JavaScript da mesma forma que em CSS:</p>
+        <div class="exemplo">
+          <h3>JS</h3>
+          <code>/*
+            Tudo no meio é um comentário.
+            */</code>
+        </div>
+        <p>Se o seu comentário não contém quebras de linha, é uma opção colocá-lo atrás de duas barras como esta:</p>
+        <div class="exemplo">
+          <h3>JS</h3>
+          <code>// Isso é um comentário</code>
+        </div>
+      </section>
+      <section class="main-section" id="operadores">
+        <header>
+          <h2>Operadores</h2>
+        </header>
+        <p>Um <code>operator</code> é um símbolo matemático que produz um resultado baseado em dois valores (ou variáveis). Na tabela a seguir, você pode ver alguns dos operadores mais simples, juntamente com alguns exemplos para experimentar no console JavaScript.</p>
+        <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
+        <div class="grid-section">
+          <div class="col-1">
+            <h3>Operador</h3>
+            <p>Adição</p>
+            <p>Subtração, Multiplicação, Divisão</p>
+            <p>Atribuição</p>
+            <p>Igualdade estrita</p>
+            <p>Não, não é igual</p>
+          </div>
+          <div class="col-2">
+            <h3>Explicação</h3>
+            <p>Adicione dois números ou combine duas strings.</p>
+            <p>Eles fazem o que você espera que façam em matemática básica.</p>
+            <p>Como você já viu: isso atribui um valor a uma variável.</p>
+            <p>Isso executa um teste para ver se dois valores são iguais. Ele retorna um Resultado <code>true/false</code> (booleano).</p>
+            <p>Isso retorna o valor logicamente oposto do que precede. Acontece um true em um false, etc. Quando é usado ao lado do operador de igualdade, o operador de negação testa se dois os valores não são iguais.</p>
+          </div>
+          <div class="col-3">
+            <h3>Símbolo(s)</h3>
+            <code>+</code>
+            <code>-, *, /</code>
+            <code>=</code>
+            <code>===</code>
+            <code>!, !==</code>
+          </div>
+          <div class="col-4">
+            <div class="container-col">
+              <code>6 + 9;</code>
+              <code>'Olá ' + 'mundo!';</code>
+            </div>
+            <div class="container-col">
+              <code>9 - 3;</code>
+              <code>8 * 2; // multiplicar em JS é um asterisco</code>
+              <code>9 / 3;</code>
+            </div>
+            <div class="container-col">
+              <code>let myVariable = 'Bob';</code>
+            </div>
+            <div class="container-col">
+              <code>let myVariable = 3;</code>
+              <code>myVariable === 4;</code>
+            </div>
+            <div class="container-col">
+              <p>Para "Not", a expressão básica é true, mas o a comparação retorna false porque nós a negamos:
+              <p>
+                <code>let myVariable = 3;</code>
+                <code>!(myVariable === 3);</code>
+              <p>"Não é igual" dá basicamente o mesmo resultado com diferentes sintaxe. Aqui estamos testando "é <code>myVariable</code> NÃO igual a 3". Isso retorna <code>false</code> porque <code>myVariable</code> É igual a 3:</p>
+              <code>let myVariable = 3;</code>
+              <code>myVariable !== 3;</code>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section" id="condicionais">
+        <header>
+          <h2>Condicionais</h2>
+        </header>
+        <p>Condicionais são estruturas de código usadas para testar se uma expressão retorna verdadeira ou não. Uma forma muito comum de condicionais é a instrução <code>if...else</code>. Por exemplo:</p>
+        <div class="exemplo-grid">
+          <h3>JS</h3>
+          <code>let iceCream = "chocolate";</code>
+          <code>if (iceCream === "chocolate") {</code>
+          <code>  alert("Sim, eu amo sorvete de chocolate!");</code>
+          <code>} else {</code>
+          <code>  alert("Aaaah, mas chocolate é o meu favorito…");</code>
+          <code>}</code>
+        </div>
+      </section>
+    </section>
+
+
+
   </main>
 </body>
 
