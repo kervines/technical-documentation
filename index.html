@@ -118,37 +118,54 @@
           <h2>Variáveis</h2>
         </header>
         <p>Variables são contêineres que armazenam valores. Você começa declarando uma variável com a palavra-chave let, seguida do nome que você dá à variável:</p>
-        <div class="exemplo">
+        <div class="exemplo-variavel exemplo">
+          <h3>JS</h3>
           <code>let myVariable;</code>
         </div>
         <p>JavaScript diferencia maiúsculas de minúsculas. Isso significa que minhaVariável não é o mesmo que minhavariável. Se você tiver problemas em seu código, verifique o caso!</p>
         <p>Observe que as variáveis podem conter valores que têm diferentes tipos de dados:</p>
-        <div class="grid-section">
-          <div class="col-1">
-            <h3>Variáveis</h3>
-            <p>String</p>
-            <p>Number</p>
-            <p>Boolean</p>
-            <p>Array</p>
-            <p>Object</p>
-          </div>
-          <div class="col-2">
-            <h3>Explicação</h3>
-            <p> Esta é uma sequência de texto conhecida como string. Para significar que o valor for uma string, coloque-a entre aspas simples.</p>
-            <p>Isto é um número. Os números não têm aspas.</p>
-            <p>Este é um valor Verdadeiro/Falso. As palavras <code>true</code> e <code>false</code> são palavras-chave especiais que não precisam de aspas.</p>
-            <p>Esta é uma estrutura que permite armazenar vários valores em um único referência.</p>
-            <p>Isso pode ser qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenados em uma variável. Tenha isso em mente enquanto aprende.</p>
-          </div>
-          <div class="col-3">
-            <h3>Exemplo</h3>
-            <code>let myVariable = 'Bob';</code>
-            <code>let minhaVariável = 10;</code>
-            <code>let myVariable = true;</code>
-            <code>let myVariable = [1,'Bob','Steve',10];</code>
-            <code>let myVariable = document.querySelector('h1');</code>
-          </div>
-        </div>
+        <table class="grid-section-3col">
+          <tr>
+            <th>Variáveis</th>
+            <th>Explicação</th>
+            <th>Exemplo</th>
+          </tr>
+          <tr>
+            <td>String</td>
+            <td> Esta é uma sequência de texto conhecida como string. Para significar que o valor for uma string, coloque-a entre aspas simples.</td>
+            <td>
+              <code>let myVariable = 'Bob';</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td>Isto é um número. Os números não têm aspas.</td>
+            <td>
+              <code>let minhaVariável = 10;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Boolean</td>
+            <td>Este é um valor Verdadeiro/Falso. As palavras <code>true</code> e <code>false</code> são palavras-chave especiais que não precisam de aspas.</td>
+            <td>
+              <code>let myVariable = true;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Array</td>
+            <td>Esta é uma estrutura que permite armazenar vários valores em um único referência.</td>
+            <td>
+              <code>let myVariable = [1,'Bob','Steve',10];</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Object</td>
+            <td>Isso pode ser qualquer coisa. Tudo em JavaScript é um objeto e pode ser armazenados em uma variável. Tenha isso em mente enquanto aprende.</td>
+            <td>
+              <code>let myVariable = document.querySelector('h1');</code>
+            </td>
+          </tr>
+        </table>
         <p>Então, por que precisamos de variáveis? As variáveis são necessárias para fazer qualquer coisa interessante na programação. Se os valores não pudessem ser alterados, você não poderia fazer nada dinâmico, como personalizar uma mensagem de saudação ou alterar uma imagem exibida em uma galeria de imagens.</p>
       </section>
       <section class="main-section" id="comentarios">
@@ -174,49 +191,65 @@
         </header>
         <p>Um <code>operator</code> é um símbolo matemático que produz um resultado baseado em dois valores (ou variáveis). Na tabela a seguir, você pode ver alguns dos operadores mais simples, juntamente com alguns exemplos para experimentar no console JavaScript.</p>
         <p>Lorem ipsum dolor sit amet.</p><code>Codigo teste!</code>
-        <div class="grid-section">
-          <div class="col-1">
-            <h3>Operador</h3>
-            <p>Adição</p>
-            <p>Subtração, Multiplicação, Divisão</p>
-            <p>Atribuição</p>
-            <p>Igualdade estrita</p>
-            <p>Não, não é igual</p>
-          </div>
-          <div class="col-2">
-            <h3>Explicação</h3>
-            <p>Adicione dois números ou combine duas strings.</p>
-            <p>Eles fazem o que você espera que façam em matemática básica.</p>
-            <p>Como você já viu: isso atribui um valor a uma variável.</p>
-            <p>Isso executa um teste para ver se dois valores são iguais. Ele retorna um Resultado <code>true/false</code> (booleano).</p>
-            <p>Isso retorna o valor logicamente oposto do que precede. Acontece um true em um false, etc. Quando é usado ao lado do operador de igualdade, o operador de negação testa se dois os valores não são iguais.</p>
-          </div>
-          <div class="col-3">
-            <h3>Símbolo(s)</h3>
-            <code>+</code>
-            <code>-, *, /</code>
-            <code>=</code>
-            <code>===</code>
-            <code>!, !==</code>
-          </div>
-          <div class="col-4">
-            <div class="container-col">
+        <table>
+          <tr>
+            <th>Operador</th>
+            <th>Explicação</th>
+            <th>Símbolo(s)</th>
+            <th>Exemplo</th>
+          </tr>
+          <tr>
+            <td>Adição</td>
+            <td>Adicione dois números ou combine duas strings.</td>
+            <td>
+              <code>+</code>
+            </td>
+            <td>
               <code>6 + 9;</code>
               <code>'Olá ' + 'mundo!';</code>
-            </div>
-            <div class="container-col">
+            </td>
+          </tr>
+          <tr>
+            <td>Subtração, Multiplicação, Divisão</td>
+            <td>Eles fazem o que você espera que façam em matemática básica.</td>
+            <td>
+              <code>-, *, /</code>
+            </td>
+            <td>
               <code>9 - 3;</code>
               <code>8 * 2; // multiplicar em JS é um asterisco</code>
               <code>9 / 3;</code>
-            </div>
-            <div class="container-col">
+            </td>
+          </tr>
+          <tr>
+            <td>Atribuição</td>
+            <td>Como você já viu: isso atribui um valor a uma variável.</td>
+            <td>
+              <code>=</code>
+            </td>
+            <td>
               <code>let myVariable = 'Bob';</code>
-            </div>
-            <div class="container-col">
               <code>let myVariable = 3;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Igualdade estrita</td>
+            <td>Isso executa um teste para ver se dois valores são iguais. Ele retorna um Resultado <code>true/false</code> (booleano).</td>
+            <td>
+              <code>===</code>
+            </td>
+            <td>
               <code>myVariable === 4;</code>
-            </div>
-            <div class="container-col">
+            </td>
+
+          </tr>
+          <tr>
+            <td>Não, não é igual</td>
+            <td>Isso retorna o valor logicamente oposto do que precede. Acontece um true em um false, etc. Quando é usado ao lado do operador de igualdade, o operador de negação testa se dois os valores não são iguais.</td>
+            <td>
+              <code>!, !==</code>
+            </td>
+            <td>
               <p>Para "Not", a expressão básica é true, mas o a comparação retorna false porque nós a negamos:
               <p>
                 <code>let myVariable = 3;</code>
@@ -224,16 +257,16 @@
               <p>"Não é igual" dá basicamente o mesmo resultado com diferentes sintaxe. Aqui estamos testando "é <code>myVariable</code> NÃO igual a 3". Isso retorna <code>false</code> porque <code>myVariable</code> É igual a 3:</p>
               <code>let myVariable = 3;</code>
               <code>myVariable !== 3;</code>
-            </div>
-          </div>
-        </div>
+            </td>
+          </tr>
+        </table>
       </section>
       <section class="main-section" id="condicionais">
         <header>
           <h2>Condicionais</h2>
         </header>
         <p>Condicionais são estruturas de código usadas para testar se uma expressão retorna verdadeira ou não. Uma forma muito comum de condicionais é a instrução <code>if...else</code>. Por exemplo:</p>
-        <div class="exemplo-grid">
+        <div class="exemplo">
           <h3>JS</h3>
           <code>let iceCream = "chocolate";</code>
           <code>if (iceCream === "chocolate") {</code>
