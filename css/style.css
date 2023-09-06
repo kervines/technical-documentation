@@ -15,7 +15,9 @@ a {
   text-decoration: none;
   color: #333;
 }
-
+code {
+  font-size: 14px;
+}
 main {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -102,4 +104,10 @@ table tr:nth-child(6) {
 
 #condicionais .exemplo code {
   display: block;
+}
+
+.exemplo-code {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
 }
