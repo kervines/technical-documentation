@@ -20,7 +20,28 @@ code {
 }
 main {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  /* grid-template-columns: 300px 1fr; */
+}
+.hide {
+  /* display: none; */
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  top: 6px;
+  left: 270px;
+  cursor: pointer;
+  transition: 0.2s;
+  z-index: 10;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 #navbar {
   box-shadow: 1px 0 5px 0 #c5c5c5;
@@ -28,6 +49,7 @@ main {
   height: 100%;
 }
 #navbar header {
+  margin-top: 30px;
   padding: 5px 10px;
 }
 #navbar li {
