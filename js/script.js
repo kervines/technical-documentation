@@ -5,7 +5,12 @@ btnOpenClose.style.left = '0px';
 navBar.style.display = 'none';
 
 function btnClose() {
-  btnOpenClose.style.left = '270px';
+  if (window.innerWidth > 1400) {
+    btnOpenClose.style.left = '270px';
+  } else {
+    btnOpenClose.style.left = '250px';
+    btnOpenClose.style.top = '15px';
+  }
   btnOpenClose.innerHTML = '❌';
   navBar.style.display = 'block';
 }
