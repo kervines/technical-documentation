@@ -47,11 +47,6 @@ code {
   }
 }
 
-main {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-}
-
 /* Navbar */
 #navbar {
   background-color: var(--bg-color-navbar);
@@ -63,7 +58,6 @@ main {
   width: 300px;
   height: 100%;
   padding: 20px 10px;
-  grid-column: 1/2;
 }
 #navbar header a {
   display: block;
@@ -131,8 +125,7 @@ main {
 .container {
   width: 1200px;
   padding: 20px 50px;
-  margin: 0 auto;
-  grid-column: 2/-1;
+  margin-left: 300px;
 }
 
 .container p {
