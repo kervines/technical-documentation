@@ -28,6 +28,7 @@ code {
   font-size: 14px;
 }
 
+/* Botao de abrir e fechar navbar sidevar (nao implementado) */
 .btn {
   border: none;
   background-color: transparent;
@@ -45,10 +46,13 @@ code {
     transform: scale(1.2);
   }
 }
+
 main {
   display: grid;
   grid-template-columns: 300px 1fr;
 }
+
+/* Navbar */
 #navbar {
   background-color: var(--bg-color-navbar);
   color: var(--primary-color-navbar);
