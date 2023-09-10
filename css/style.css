@@ -107,12 +107,19 @@ main {
   display: flex;
   gap: 20px;
 }
+
 .social-link a {
   margin-top: 10px;
   transition: 0.2s;
+  color: var(--second-color-navbar);
+
+  &:hover {
+    transform: scale(1.1);
+    color: var(--primary-color-navbar);
+  }
 }
-.social-link a:hover {
-  transform: scale(1.1);
+.social-link i {
+  font-size: 32px;
 }
 
 /* Conteudo do site */
@@ -187,7 +194,7 @@ table tr:nth-child(6) {
   text-align: center;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   #navbar {
     width: 300px;
   }
@@ -197,4 +204,4 @@ table tr:nth-child(6) {
   .container {
     max-width: 960px;
   }
-}
+} */
