@@ -61,8 +61,12 @@ main {
   padding: 20px 10px;
   grid-column: 1/2;
 }
-#navbar header {
+#navbar header a {
+  display: block;
+  color: var(--primary-color-navbar);
   margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 #navbar li {
   margin-left: 10px;
