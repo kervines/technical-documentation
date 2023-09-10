@@ -20,28 +20,6 @@ code {
   font-size: 14px;
 }
 
-/* .hide {
-  animation: hide 0.5s ease forwards;
-}
-.show {
-  animation: show 0.5s ease forwards;
-}
-@keyframes hide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes show {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-} */
 .btn {
   border: none;
   background-color: transparent;
@@ -95,28 +73,6 @@ main {
   margin: 0 auto;
   grid-column: 2/-1;
 }
-/* .move-out {
-  animation: move-out 0.5s ease forwards;
-}
-@keyframes move-out {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(150px);
-  }
-}
-.move-in {
-  animation: move-in 0.5s ease forwards;
-}
-@keyframes move-in {
-  0% {
-    transform: translateX(150px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-} */
 
 .container p {
   letter-spacing: 0.5px;
