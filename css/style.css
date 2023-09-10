@@ -115,7 +115,7 @@ main {
   color: var(--second-color-navbar);
 
   &:hover {
-    transform: scale(1.1);
+    transform: translateY(-2px);
     color: var(--primary-color-navbar);
   }
 }
