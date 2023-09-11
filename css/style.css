@@ -151,7 +151,6 @@ code {
 .main-section li {
   margin: 10px 0;
 }
-
 .exemplo {
   background-color: var(--example-bg);
   border-radius: 4px;
@@ -197,12 +196,13 @@ table tr:nth-child(6) {
   text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   main {
     display: flex;
     flex-direction: column;
   }
   #navbar {
+    display: none;
     height: 100vh;
     width: 100vw;
   }
@@ -217,5 +217,38 @@ table tr:nth-child(6) {
   }
   #footer i {
     font-size: 20px;
+  }
+
+  /* Conteudo */
+  .container {
+    width: 400px;
+    padding: 10px;
+    margin-left: 0;
+  }
+  .main-section p {
+    text-align: justify;
+  }
+  code {
+    font-size: 12px;
+  }
+  .container p,
+  .container ul,
+  #variaveis .exemplo-variavel {
+    margin-left: 20px;
+  }
+  #Hello_world img {
+    width: 310px;
+  }
+  table {
+    font-size: 12px;
+  }
+  table th {
+    font-size: 12px;
+  }
+  table td {
+    padding: 2px;
+  }
+  .exemplo {
+    padding: 5px;
   }
 }
