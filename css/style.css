@@ -203,12 +203,19 @@ table tr:nth-child(6) {
     flex-direction: column;
   }
   #navbar {
-    position: static;
-    width: auto;
-    height: 150px;
+    height: 100vh;
+    width: 100vw;
   }
-  .container {
-    margin: 0px auto;
-    width: 380px;
+
+  #navbar ul li,
+  #navbar header {
+    text-align: center;
+  }
+  #footer {
+    font-size: 14px;
+    margin: 20px;
+  }
+  #footer i {
+    font-size: 20px;
   }
 }
