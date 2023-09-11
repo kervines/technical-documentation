@@ -222,7 +222,7 @@ table tr:nth-child(6) {
   /* Conteudo */
   .container {
     width: 400px;
-    padding: 10px;
+    padding: 5px 20px;
     margin-left: 0;
   }
   .main-section p {
@@ -234,7 +234,7 @@ table tr:nth-child(6) {
   .container p,
   .container ul,
   #variaveis .exemplo-variavel {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   #Hello_world img {
     width: 310px;
@@ -243,12 +243,18 @@ table tr:nth-child(6) {
     font-size: 12px;
   }
   table th {
-    font-size: 12px;
+    font-size: 14px;
   }
   table td {
     padding: 2px;
   }
   .exemplo {
     padding: 5px;
+  }
+  .exemplo code {
+    font-size: 12px;
+  }
+  .exemplo h3 {
+    font-size: 14px;
   }
 }
