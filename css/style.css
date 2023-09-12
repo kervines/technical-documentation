@@ -35,7 +35,8 @@ code {
 
 /* Botao de abrir e fechar navbar sidevar (nao implementado) */
 .btn {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Navbar */
@@ -183,24 +184,27 @@ table tr:nth-child(6) {
 }
 
 .hide {
-  opacity: 0;
+  transform: translate(-100%);
 }
 
 @media (max-width: 420px) {
   .btn {
-    display: block;
+    opacity: 1;
+    height: 50px;
+    pointer-events: visible;
     color: var(--second-color-navbar);
     background-color: var(--bg-color-navbar);
     border: none;
     position: fixed;
     top: 5px;
     right: 10px;
-    padding: 5px 10px;
+    padding: 5px;
     font-size: 36px;
-    z-index: 1;
   }
   .open {
+    position: absolute;
     background-color: var(--bg-body);
+    font-size: 28px;
   }
   main {
     display: flex;
@@ -213,7 +217,7 @@ table tr:nth-child(6) {
     height: 100%;
     width: 100%;
     text-align: center;
-    transition: 0.1s;
+    transition: 0.3s;
   }
   #navbar header a {
     font-size: 28px;
