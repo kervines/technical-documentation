@@ -13,8 +13,16 @@ buttonClose.addEventListener('click', () => {
 
 links.forEach((link) => {
   link.addEventListener('click', () => {
-    navBarElement.classList.toggle('hide');
+    if (window.innerWidth <= 420) {
+      navBarElement.classList.toggle('hide');
+    }
   });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 420 && navBarElement.classList.contains('hide')) {
+    navBarElement.classList.remove('hide');
+  }
 });
 
 document.addEventListener('scroll', () => {
