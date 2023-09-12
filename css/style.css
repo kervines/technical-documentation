@@ -37,6 +37,34 @@ code {
 .btn {
   opacity: 0;
   pointer-events: none;
+
+  width: 36px;
+  height: 36px;
+  color: var(--second-color-navbar);
+  background-color: var(--bg-color-navbar);
+  border: none;
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  padding: 5px;
+  font-size: 36px;
+
+  transition: 0.2s;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-doc .top-return {
+  top: 90%;
+  pointer-events: visible;
+  border-radius: 20px;
+  opacity: 0;
+  color: var(--primary-color);
+  background-color: var(--bg-body);
 }
 
 /* Navbar */
@@ -187,41 +215,19 @@ table tr:nth-child(6) {
   transform: translate(-100%);
 }
 
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (max-width: 420px) {
-  .btn {
-    width: 36px;
-    height: 36px;
-    opacity: 1;
-    pointer-events: visible;
-    color: var(--second-color-navbar);
-    background-color: var(--bg-color-navbar);
-    border: none;
-    position: fixed;
-    top: 5px;
-    right: 10px;
-    padding: 5px;
-    font-size: 36px;
-
-    transition: 0.2s;
-  }
   .open {
+    pointer-events: visible;
     position: absolute;
     background-color: var(--bg-body);
     font-size: 28px;
+    opacity: 1;
   }
-  .top-return {
-    top: 90%;
-    border-radius: 20px;
-    opacity: 0;
-    color: var(--primary-color);
-    background-color: var(--bg-body);
+  .close {
+    pointer-events: visible;
+    opacity: 1;
   }
+
   main {
     display: flex;
     flex-direction: column;
