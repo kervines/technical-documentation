@@ -35,21 +35,15 @@ code {
 
 /* Botao de abrir e fechar navbar sidevar (nao implementado) */
 .btn {
+  color: var(--second-color-navbar);
+  background-color: var(--bg-color-navbar);
   border: none;
-  background-color: transparent;
-  padding: 4px 8px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
   position: fixed;
-  top: 6px;
-  cursor: pointer;
-  transition: 0.5s ease;
-  z-index: 10;
-
-  &:hover {
-    transform: scale(1.2);
-  }
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 36 px;
+  z-index: 1;
 }
 
 /* Navbar */
@@ -202,21 +196,25 @@ table tr:nth-child(6) {
     flex-direction: column;
   }
   #navbar {
-    display: none;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  #navbar ul li,
-  #navbar header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
     text-align: center;
   }
+  #navbar header a {
+    font-size: 28px;
+  }
+  #navbar li a {
+    font-size: 18px;
+  }
   #footer {
-    font-size: 14px;
+    font-size: 16px;
     margin: 20px;
   }
   #footer i {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   /* Conteudo */
