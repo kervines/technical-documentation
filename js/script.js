@@ -20,7 +20,7 @@ links.forEach((link) => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 420 && navBarElement.classList.contains('hide')) {
+  if (window.innerWidth > 720 && navBarElement.classList.contains('hide')) {
     navBarElement.classList.remove('hide');
   }
 });
