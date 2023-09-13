@@ -282,7 +282,6 @@ table tr:nth-child(6) {
   /* Conteudo */
   .container {
     width: 700px;
-    margin-left: 0;
   }
   .main-section p {
     text-align: justify;
@@ -318,6 +317,9 @@ table tr:nth-child(6) {
   }
 }
 @media (max-width: 420px) {
+  main {
+    font-size: 20px;
+  }
   .open {
     pointer-events: visible;
     position: absolute;
@@ -347,7 +349,7 @@ table tr:nth-child(6) {
     font-size: 28px;
   }
   #navbar li a {
-    font-size: 18px;
+    font-size: 20px;
   }
   #footer {
     font-size: 16px;
@@ -359,7 +361,7 @@ table tr:nth-child(6) {
 
   /* Conteudo */
   .container {
-    width: 400px;
+    width: 390px;
     padding: 5px 20px;
     margin-left: 0;
   }
