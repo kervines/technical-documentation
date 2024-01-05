@@ -1,0 +1,63 @@
+.container-button {
+  width: 50px;
+  height: 25px;
+  border-radius: 60px;
+  position: relative;
+  margin-left: 10px;
+  background-color: var(--example-bg);
+  transition: background 1s ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 720px) {
+  .container-button {
+    top: -2rem;
+  }
+}
+@media (max-width: 420px) {
+  .container-button {
+    top: -1.5rem;
+  }
+}
+
+.circle {
+  background-color: var(--primary-color);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  transition: 1s ease;
+  overflow: hidden;
+}
+.circle.active {
+  left: 25px;
+}
+#moon,
+#sun {
+  font-size: 15px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 1s ease;
+}
+.sun {
+  left: 2px;
+  color: orange;
+}
+.sun.active {
+  top: -30px;
+  left: -50px;
+}
+.moon {
+  color: #7e7e00;
+  left: 50px;
+  top: 100px;
+}
+.moon.active {
+  left: 5px;
+  top: 50%;
+}
