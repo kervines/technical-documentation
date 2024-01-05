@@ -1,3 +1,5 @@
+@import './dark-mode.css';
+
 :root {
   --bg-color-navbar: #333;
   --primary-color-navbar: #ccc;
@@ -10,6 +12,17 @@
 
   --example-color: #555;
   --example-bg: #f5f5f5;
+  --example-bg-table: #f5f5f5;
+}
+
+.dark-mode:root {
+  --bg-color-navbar: #ccc;
+  --primary-color-navbar: #333;
+  --second-color-navbar: #111;
+  --bg-body: #333;
+  --example-bg: #333;
+  --primary-color: #f1ede6;
+  --example-bg-table: #555;
 }
 * {
   margin: 0;
@@ -23,6 +36,7 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--primary-color);
   background-color: var(--bg-body);
+  transition: all 0.3s;
 }
 
 a {
@@ -37,6 +51,7 @@ code {
 .btn {
   opacity: 0;
   pointer-events: none;
+  cursor: pointer;
 
   width: 36px;
   height: 36px;
@@ -57,7 +72,6 @@ button {
   justify-content: center;
   align-items: center;
 }
-
 #main-doc .top-return {
   top: 90%;
   pointer-events: visible;
@@ -78,6 +92,7 @@ button {
   width: 300px;
   height: 100%;
   padding: 20px 10px;
+  transition: all 0.3s;
 }
 #navbar header a {
   display: block;
@@ -177,13 +192,13 @@ button {
 }
 .exemplo code {
   font-size: 16px;
-  color: var(--example-color);
+  color: var(--primary-color);
 }
 
 table {
   width: 1080x;
   margin: 20px auto;
-  color: #333;
+  color: var(--primary-color);
   border: 1px solid #c5c5c5;
 }
 
@@ -198,7 +213,7 @@ table td {
 table tr:nth-child(2),
 table tr:nth-child(4),
 table tr:nth-child(6) {
-  background-color: var(--example-bg);
+  background-color: var(--example-bg-table);
 }
 
 #condicionais .exemplo code {
@@ -282,6 +297,7 @@ table tr:nth-child(6) {
   /* Conteudo */
   .container {
     width: 700px;
+    margin-left: 0;
   }
   .main-section p {
     text-align: justify;
